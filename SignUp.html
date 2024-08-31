@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP</title>
+    <link rel="stylesheet" href="./SignUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        
+        <form id="form" onsubmit="return validateForm()">
+            <h1>Sign Up</h1>
+            <div style="padding: 10px;">
+                <label for="fname-input">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <input type="text" name="fname" id="fname-input" placeholder="FullName">
+                
+            </div>
+            <span id="fname-error" class="error-message"></span>
+
+            <div style="padding: 10px;">
+                <label for="email-input">
+                    <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input type="email" name="email" id="email-input" placeholder="Email">
+            </div>
+            <span id="email-error" class="error-message"></span>
+
+            <div style="padding: 10px;">
+                <label for="password-input">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <input type="password" name="password" id="password-input" placeholder="Password">
+                
+            </div>
+            <span id="password-error" class="error-message"></span>
+
+            <div style="padding: 10px;">
+                <label for="confirm-password-input">
+                    <i class="fa-solid fa-key"></i>
+                </label>
+                <input type="password" name="confirm-password" id="confirm-password-input" placeholder="Confirm-Password">
+            </div>
+            <span id="confirm-password-error" class="error-message"></span>
+            <br>
+    
+            <button type="submit" onclick="openPopup()">Sign Up</button>  
+            <br>
+
+            <p style="padding-top: 10px;">Already have an Account? <a href="./SignIn.html">Sign In</a></p>
+               
+        </form>
+    </div>
+    <script src="SignUp.js"></script>
+</body>
+</html>
+
